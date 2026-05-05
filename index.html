@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JVN Ganesh | Data Scientist & AI Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <p class="loader-text">LOADING</p>
+    </div>
+  </div>
+
+  <!-- THREE.JS BACKGROUND CANVAS -->
+  <canvas id="galaxy-canvas"></canvas>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cur-ring"></div>
+  <div class="cur-dot"></div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-logo">JVN<span>.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello Universe, I'm</p>
+      <h1 class="hero-name">JVN <span>Ganesh</span></h1>
+      <div class="hero-role-wrap">
+        <span id="typewriter"></span><span class="type-cursor">|</span>
+      </div>
+      <p class="hero-tags">
+        <span>6 IEEE Publications</span>&nbsp;•&nbsp;
+        <span>2 Patents</span>&nbsp;•&nbsp;
+        <span>AWS Certified</span>&nbsp;•&nbsp;
+        <span>Global Hackathon Winner</span>
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <div class="sec-header">
+      <span class="sec-label">WHO AM I</span>
+      <h2>About <span>Me</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo-wrap">
+        <div class="orbit-ring r1"><div class="orbit-node n1"></div></div>
+        <div class="orbit-ring r2"><div class="orbit-node n2"></div></div>
+        <img src="profile-pic10.png" alt="JVN Ganesh" class="profile-img" />
+      </div>
+      <div class="about-info">
+        <p>Software Engineer & Data Scientist with a deep passion for building intelligent systems that solve real-world problems — from asteroid classification to healthcare monitoring to enterprise-scale transaction pipelines.</p>
+        <p>Currently a <strong>Programmer Analyst at Cognizant</strong> engineering backend systems handling 250K+ enterprise transactions. Alumnus of <strong>VIT Vellore</strong> (B.Tech CSE – Data Science). Head of Data Science at both <strong>CSI</strong> and <strong>VITMAS</strong>.</p>
+        <div class="stat-row">
+          <div class="stat"><span class="stat-n" data-target="10">0</span><span class="stat-suf">+</span><span class="stat-l">Roles</span></div>
+          <div class="stat"><span class="stat-n" data-target="6">0</span><span class="stat-suf"></span><span class="stat-l">IEEE Papers</span></div>
+          <div class="stat"><span class="stat-n" data-target="2">0</span><span class="stat-suf"></span><span class="stat-l">Patents</span></div>
+          <div class="stat"><span class="stat-n" data-target="5">0</span><span class="stat-suf">+</span><span class="stat-l">Hackathon Wins</span></div>
+        </div>
+        <div class="edu-list">
+          <div class="edu-item">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <h4>B.Tech CSE (Data Science)</h4>
+              <p>VIT Vellore &nbsp;•&nbsp; 2021–2025</p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon">🏫</div>
+            <div>
+              <h4>High School – CBSE</h4>
+              <p>Abu Dhabi Indian School, UAE &nbsp;•&nbsp; 2007–2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section id="certifications" class="certs-section">
+    <div class="sec-header">
+      <span class="sec-label">CREDENTIALS</span>
+      <h2>Key <span>Certifications</span></h2>
+    </div>
+    <div class="certs-wrapper">
+      <div class="certs-track" id="certsTrack"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills">
+    <div class="sec-header">
+      <span class="sec-label">WHAT I KNOW</span>
+      <h2>Tech <span>Stack</span></h2>
+    </div>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience">
+    <div class="sec-header">
+      <span class="sec-label">WHERE I'VE WORKED</span>
+      <h2>Experience <span>Timeline</span></h2>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects">
+    <div class="sec-header">
+      <span class="sec-label">WHAT I'VE BUILT</span>
+      <h2>Featured <span>Projects</span></h2>
+    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </section>
+
+  <!-- ===================== RESEARCH ===================== -->
+  <section id="research">
+    <div class="sec-header">
+      <span class="sec-label">PUBLISHED WORK</span>
+      <h2>Research &amp; <span>Patents</span></h2>
+    </div>
+    <div class="research-grid" id="researchGrid"></div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+  <section id="achievements">
+    <div class="sec-header">
+      <span class="sec-label">RECOGNITION</span>
+      <h2>Achievements &amp; <span>Certifications</span></h2>
+    </div>
+    <div class="ach-grid" id="achGrid"></div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div class="sec-header">
+      <span class="sec-label">LET'S CONNECT</span>
+      <h2>Get In <span>Touch</span></h2>
+    </div>
+    <p class="contact-sub">Open to exciting opportunities, collaborations, and conversations about AI, data science, and building the future.</p>
+    <div class="contact-cards">
+      <a href="mailto:jvnganesh@gmail.com" class="contact-card">
+        <div class="cc-icon">✉</div>
+        <div><span class="cc-label">Email</span><span class="cc-val">jvnganesh@gmail.com</span></div>
+      </a>
+      <a href="https://www.linkedin.com/in/jvn-ganesh-30504477/" target="_blank" rel="noopener" class="contact-card">
+        <div class="cc-icon">in</div>
+        <div><span class="cc-label">LinkedIn</span><span class="cc-val">JVN Ganesh</span></div>
+      </a>
+      <a href="https://github.com/jvnganesh" target="_blank" rel="noopener" class="contact-card">
+        <div class="cc-icon">⌥</div>
+        <div><span class="cc-label">GitHub</span><span class="cc-val">jvnganesh</span></div>
+      </a>
+      <a href="tel:+918790386678" class="contact-card">
+        <div class="cc-icon">📞</div>
+        <div><span class="cc-label">Phone</span><span class="cc-val">+91 8790 386678</span></div>
+      </a>
+    </div>
+    <footer>
+      <p>© 2025 Venkata Naga Ganesh Jujhavarapu &nbsp;•&nbsp; Built with Three.js &amp; GSAP</p>
+    </footer>
+  </section>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

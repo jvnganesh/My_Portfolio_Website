@@ -77,18 +77,4 @@ Programmer Analyst @ Cognizant · Data Scientist · AI/ML Researcher
 
 ---
 
-## 🚀 Run Locally
-
-No build step needed — just open in a browser:
-
-```bash
-git clone https://github.com/jvnganesh/My_Portfolio_Website.git
-cd My_Portfolio_Website
-# open index.html in your browser
-```
-
-Requires an internet connection on first load for CDN assets (Three.js, GSAP, Google Fonts).
-
----
-
 <p align="center">Built with Three.js & GSAP &nbsp;•&nbsp; © 2025 Venkata Naga Ganesh Jujhavarapu</p>
